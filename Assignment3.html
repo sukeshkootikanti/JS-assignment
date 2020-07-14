@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+  <meta charset="utf-8">
+  <title>JavaScript current day and time</title>
+  </head>
+  <body>
+      <p id="sample"></p>
+      <br>
+      <p id="sample2"></p>
+      <script>
+        var today = new Date();
+        var year=today.getFullYear();
+        var month=today.getMonth()+1;
+        var date=today.getDate();
+        document.getElementById('sample').innerHTML=month+'-'+date+'-'+year;
+        document.getElementById('sample2').innerHTML=month+'/'+date+'/'+year;
+        
+      </script>
+  </body>
+</html>
